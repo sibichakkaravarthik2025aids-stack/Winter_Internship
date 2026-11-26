@@ -1,9 +1,10 @@
-const Students = () => {
+const Students = ({ name, age }) => {
     return (
-        <div>
-            <h1>Students Component</h1>
-            <p>This is the Students component where you can display student information.</p>
-        </div>
+        <section className="students-section">
+            <h2>Students</h2>
+            <p>I am {name} and age is {age}</p>
+        </section>
     );
-}
+};
+
 export default Students;
